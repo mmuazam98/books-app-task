@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay .loader {
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgb(172, 172, 172);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: rotate 1.5s infinite linear;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
